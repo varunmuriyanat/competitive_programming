@@ -3,9 +3,7 @@ def bubble_sort(arr):
         for j in range(len(arr) - 1):
             #print(i, j, j+1)
             if(arr[j+1] < arr[j]):
-                temp = arr[j]
-                arr[j] = arr[j+1]
-                arr[j+1] = temp
+                arr[j], arr[j+1] = arr[j+1], arr[j]
 
 arr = [15, 7, 11, 10, 7, 9]
 
